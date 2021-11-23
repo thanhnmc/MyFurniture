@@ -8,12 +8,15 @@
 import Foundation
 import RxSwift
 import RxCocoa
+import RxDataSources
 import UIKit
 
 struct ItemViewModel {
     var itemList : BehaviorRelay<[Item]> = .init(value: [])
     var catergoryList : BehaviorRelay<[Category]> = .init(value: [])
     
+    var items: BehaviorRelay<[SectionModel<ItemSection, Any>]> = .init(value: [])
+
     let disposedBag = DisposeBag()
     
 //    func fetchData() -> Observable<[ToDo]> {
@@ -27,5 +30,39 @@ struct ItemViewModel {
         self.catergoryList.accept([.chair, .bed, .table])
         self.itemList.accept(itemList)
 //        return Observable.just(taskList)
+    }
+    
+    func getItemData() {
+        self.itemList
+            .withLatestFrom(self.items.asObservable()) { (itemList,items) -> [SectionModel<ItemSection, Any>] in
+                guard !itemList.isEmpty else {return items}
+                var items = items
+                items.append(.init(model: .Horizontal, items: [itemList]))
+                items.sort(by: {$0.model < $1.model})
+                return items
+            }
+            .subscribe(onNext: self.items.accept)
+            .disposed(by: self.disposedBag)
+    }
+    
+    func getListData() {
+        self.itemList
+            .withLatestFrom(self.items.asObservable()) { (itemList,items) -> [SectionModel<ItemSection, Any>] in
+                guard !itemList.isEmpty else {return items}
+                var items = items
+                items.append(.init(model: .List, items: [itemList]))
+                items.sort(by: {$0.model < $1.model})
+                return items
+            }
+            .subscribe(onNext: self.items.accept)
+            .disposed(by: self.disposedBag)
+    }
+    
+    func item(indexPath: IndexPath) -> ItemSection {
+        return self.items.value[indexPath.section].identity
+    }
+    
+    func section(index: Int) -> ItemSection {
+        return self.items.value[index].model
     }
 }

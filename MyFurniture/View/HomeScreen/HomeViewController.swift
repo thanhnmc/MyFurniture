@@ -47,6 +47,9 @@ class HomeViewController: BaseVC {
     
     private func callData() {
         self.tagViewModel.fetchData()
+        self.itemViewModel.getItemData()
+        self.itemViewModel.getListData()
+
     }
 
     private func bindData() {
