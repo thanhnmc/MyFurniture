@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TagCollectionViewCell" customModule="MyFurniture" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="85" height="38"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="85" height="38"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ygi-Dq-v7a">
+                        <rect key="frame" x="0.0" y="0.0" width="85" height="38"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chair" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWj-Mk-bFT">
+                                <rect key="frame" x="24.5" y="10" width="36" height="17.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LWj-Mk-bFT" secondAttribute="height" multiplier="37:18" id="82W-NT-c21"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" name="Darker Black"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LWj-Mk-bFT" firstAttribute="width" secondItem="Ygi-Dq-v7a" secondAttribute="width" multiplier="37:87" id="JWe-TZ-COe"/>
+                            <constraint firstItem="LWj-Mk-bFT" firstAttribute="centerX" secondItem="Ygi-Dq-v7a" secondAttribute="centerX" id="Vv7-jO-uB1"/>
+                            <constraint firstItem="LWj-Mk-bFT" firstAttribute="top" secondItem="Ygi-Dq-v7a" secondAttribute="top" constant="10" id="jBs-1Q-x7y"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Ygi-Dq-v7a" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7qw-aH-zMH"/>
+                <constraint firstItem="Ygi-Dq-v7a" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ITQ-mz-7m8"/>
+                <constraint firstAttribute="bottom" secondItem="Ygi-Dq-v7a" secondAttribute="bottom" id="IXK-PE-Wng"/>
+                <constraint firstAttribute="trailing" secondItem="Ygi-Dq-v7a" secondAttribute="trailing" id="yLQ-Yv-zzY"/>
+            </constraints>
+            <connections>
+                <outlet property="tagLabel" destination="LWj-Mk-bFT" id="Uue-S2-Vr7"/>
+                <outlet property="viewContainer" destination="Ygi-Dq-v7a" id="zfE-AT-6I7"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="75"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Darker Black">
+            <color red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

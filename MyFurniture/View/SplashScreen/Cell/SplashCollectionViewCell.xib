@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="SplashCollectionViewCell" id="gTV-IL-0wX" customClass="SplashCollectionViewCell" customModule="MyFurniture" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="334"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="334"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="apZ-jM-vpO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="334"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your perfect interior design" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyM-iv-Tlm">
+                                <rect key="frame" x="16" y="247" width="382" height="21"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                <color key="textColor" name="Darker Black"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Furniture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXg-2q-nVe">
+                                <rect key="frame" x="127.5" y="207" width="159" height="35"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="25"/>
+                                <color key="textColor" name="Darker Black"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NcS-81-htN">
+                                <rect key="frame" x="30" y="0.0" width="354" height="227"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="334" id="2Vu-N2-xTF"/>
+                            <constraint firstAttribute="trailing" secondItem="lyM-iv-Tlm" secondAttribute="trailing" constant="16" id="6rB-AX-OPb"/>
+                            <constraint firstItem="eXg-2q-nVe" firstAttribute="centerX" secondItem="apZ-jM-vpO" secondAttribute="centerX" id="6wa-Fq-Luh"/>
+                            <constraint firstAttribute="trailing" secondItem="NcS-81-htN" secondAttribute="trailing" constant="30" id="DXb-4X-X4b"/>
+                            <constraint firstItem="eXg-2q-nVe" firstAttribute="top" secondItem="NcS-81-htN" secondAttribute="bottom" constant="-20" id="MwT-Td-d61"/>
+                            <constraint firstItem="lyM-iv-Tlm" firstAttribute="top" secondItem="eXg-2q-nVe" secondAttribute="bottom" constant="5" id="NjG-Ls-i3K"/>
+                            <constraint firstItem="lyM-iv-Tlm" firstAttribute="centerX" secondItem="apZ-jM-vpO" secondAttribute="centerX" id="S5V-y6-mu4"/>
+                            <constraint firstItem="NcS-81-htN" firstAttribute="top" secondItem="apZ-jM-vpO" secondAttribute="top" id="kbb-73-A9l"/>
+                            <constraint firstItem="lyM-iv-Tlm" firstAttribute="leading" secondItem="apZ-jM-vpO" secondAttribute="leading" constant="16" id="mTI-pO-3Wn"/>
+                            <constraint firstItem="NcS-81-htN" firstAttribute="leading" secondItem="apZ-jM-vpO" secondAttribute="leading" constant="30" id="njw-Ha-uQA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="apZ-jM-vpO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4z4-jd-5sK"/>
+                <constraint firstItem="NcS-81-htN" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="227:334" id="S7J-Cm-egD"/>
+                <constraint firstAttribute="bottom" secondItem="apZ-jM-vpO" secondAttribute="bottom" id="cgg-I4-Wgf"/>
+                <constraint firstItem="apZ-jM-vpO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qFz-ts-Y4C"/>
+                <constraint firstAttribute="trailing" secondItem="apZ-jM-vpO" secondAttribute="trailing" id="xZd-fH-gWq"/>
+            </constraints>
+            <size key="customSize" width="315" height="180"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="lyM-iv-Tlm" id="Pmh-tv-hmJ"/>
+                <outlet property="screenToShow" destination="NcS-81-htN" id="MbU-9P-9yV"/>
+            </connections>
+            <point key="canvasLocation" x="320.28985507246381" y="123.21428571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Darker Black">
+            <color red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

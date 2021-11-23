@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="229" id="KGk-i7-Jjw" customClass="ListTableViewCell" customModule="MyFurniture" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="147"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="147"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8yL-cs-l98">
+                        <rect key="frame" x="10" y="9" width="129" height="129"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="8yL-cs-l98" secondAttribute="height" id="3FE-CQ-Uww"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Chair" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGd-uP-N5m">
+                        <rect key="frame" x="156" y="25" width="146" height="22.5"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chill, Comfortable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZQ-Zj-yzt">
+                        <rect key="frame" x="156" y="50.5" width="126" height="17"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 14" translatesAutoresizingMaskIntoConstraints="NO" id="Rxx-YY-jFz">
+                        <rect key="frame" x="156" y="71.5" width="94" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Rxx-YY-jFz" secondAttribute="height" multiplier="94:16" id="TiW-FI-noF"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHU-MY-PGO">
+                        <rect key="frame" x="156" y="97.5" width="146" height="16.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8yL-cs-l98" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="129:352" id="6PL-zw-GA2"/>
+                    <constraint firstItem="Rxx-YY-jFz" firstAttribute="top" secondItem="tZQ-Zj-yzt" secondAttribute="bottom" constant="4" id="87m-By-3N5"/>
+                    <constraint firstItem="8yL-cs-l98" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="CCp-fr-wIy"/>
+                    <constraint firstAttribute="trailing" secondItem="aHU-MY-PGO" secondAttribute="trailing" constant="50" id="GGp-Ko-ax0"/>
+                    <constraint firstItem="aHU-MY-PGO" firstAttribute="top" secondItem="Rxx-YY-jFz" secondAttribute="bottom" constant="10" id="Iy7-uC-dou"/>
+                    <constraint firstItem="tZQ-Zj-yzt" firstAttribute="leading" secondItem="AGd-uP-N5m" secondAttribute="leading" id="K5t-wn-Wqm"/>
+                    <constraint firstAttribute="bottom" secondItem="8yL-cs-l98" secondAttribute="bottom" constant="9" id="M14-X1-1dT"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="tZQ-Zj-yzt" secondAttribute="trailing" constant="50" id="MOq-e3-8Zt"/>
+                    <constraint firstItem="aHU-MY-PGO" firstAttribute="leading" secondItem="Rxx-YY-jFz" secondAttribute="leading" id="MaS-bE-7W4"/>
+                    <constraint firstItem="8yL-cs-l98" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="QEC-iJ-bq0"/>
+                    <constraint firstItem="tZQ-Zj-yzt" firstAttribute="top" secondItem="AGd-uP-N5m" secondAttribute="bottom" constant="3" id="U7M-Pg-MF1"/>
+                    <constraint firstAttribute="trailing" secondItem="AGd-uP-N5m" secondAttribute="trailing" constant="50" id="Zu6-cd-7pX"/>
+                    <constraint firstItem="Rxx-YY-jFz" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="94:352" id="anI-4E-HEW"/>
+                    <constraint firstItem="Rxx-YY-jFz" firstAttribute="leading" secondItem="tZQ-Zj-yzt" secondAttribute="leading" id="ncj-PV-zTx"/>
+                    <constraint firstItem="AGd-uP-N5m" firstAttribute="leading" secondItem="8yL-cs-l98" secondAttribute="trailing" constant="17" id="sbL-02-tBf"/>
+                    <constraint firstItem="AGd-uP-N5m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="zM9-of-cEx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="itemImage" destination="8yL-cs-l98" id="Bbz-cl-72j"/>
+                <outlet property="nameLabel" destination="AGd-uP-N5m" id="3Zp-9g-TBY"/>
+                <outlet property="priceLabel" destination="aHU-MY-PGO" id="3a7-hL-mDo"/>
+                <outlet property="shortDescriptionLabel" destination="tZQ-Zj-yzt" id="3dT-Uq-Ghy"/>
+                <outlet property="viewContainer" destination="H2p-sc-9uM" id="yx4-Sy-wcm"/>
+            </connections>
+            <point key="canvasLocation" x="-216.66666666666669" y="70.647321428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Group 14" width="95" height="16"/>
+    </resources>
+</document>
